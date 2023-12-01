@@ -45,4 +45,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/tsxepo-web)
+- Frontend Mentor - [@tsxepo-web](https://www.frontendmentor.io/profile/tsxepo-web)
