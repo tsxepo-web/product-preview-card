@@ -10,7 +10,7 @@ $white: hsl(0, 0%, 100%);
 $paragraph-fontsize: 14px;
 $montserrat-font: "Montserrat";
 $fraunces-font: "Fraunces";
-:host {
+* {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,16 +23,13 @@ $fraunces-font: "Fraunces";
     color: hsl(228, 45%, 44%);
   }
 }
-.grid {
-  // display: grid;
-}
 .container {
   display: grid;
   place-content: center;
   height: 100vh;
   background: $cream;
-  border: 2px solid;
   padding: 10px;
+  max-width: 100%;
 }
 .card__wrapper {
   max-width: 500px;
@@ -43,7 +40,7 @@ $fraunces-font: "Fraunces";
 }
 .card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   img {
     width: 100%;
     height: 100%;
@@ -87,6 +84,22 @@ $fraunces-font: "Fraunces";
     }
     button:hover {
       background-color: hsl(159, 20%, 29%);
+    }
+  }
+}
+
+@media (max-width: 518px) {
+  .card__wrapper {
+    height: 100%;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px auto;
+    img {
+      border-radius: 10px 10px 0 0;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
