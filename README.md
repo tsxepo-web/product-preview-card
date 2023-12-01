@@ -33,7 +33,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
 - Live Site URL: [ProductPreviewCard](https://jazzy-daffodil-ab8ca5.netlify.app/)
 
 ## My process
